@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tushar's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="shortcut icon" href="portfolio.png" type="image/x-icon">
+  </head>
+  <body>
+    <section class="menu">
+      <button id="close-menu">&times;</button>
+      <nav>
+        <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <!-- <li><a href="#projects">Projects</a></li> -->
+        <li><a href="#technologies">Technologies</a></li>
+        <li><a href="#qualifications">Qualifications</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+    <header class="header">
+      <nav class="default-nav">
+        <section>
+          <a href="#about-me">About Me</a>
+          <!-- <a href="#projects">Projects</a> -->
+          <a href="#technologies">Technologies</a><a href="#qualifications">Qualifications</a><a href="#hobbies">Hobbies</a><a href="#contact-me">Contact</a>
+        </section>
+        <section>
+          <button id="theme-switcher"></button>
+        </section>
+      </nav>
+      <nav class="mobile-nav">
+        <button id="menu-button">Menu</button>
+      </nav>
+    </header>
+    <main class="container">
+      <article class="intro">
+        <img id="profile-image" src="WhatsApp Image 2023-04-07 at 16.56.35.jpg" alt="Profile image - Tushar" />
+        <h1>Hi, I am Tushar</h1>
+        <p>I am a <span id="dynamic-text" class="dynamic-text-color"></span></p>
+        <p class="social-links">
+          <a href="https://twitter.com/Tushar_1357?t=jYf_p8Yhj7CpH1dzbZVRAA&s=09" target="_blank">
+            <img width="30" height="30" src="https://www.iconpacks.net/icons/1/free-icon-twitter-135.png" alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/tushar-chaudhary-4a49621a3" target="_blank">
+            <img width="30" height="30" src="https://www.iconpacks.net/icons/1/free-icon-linkedin-130.png" alt="" /> </a
+          ><a href="https://instagram.com/tushar_1357?igshid=YmMyMTA2M2Y=" target="_blank">
+            <img
+              width="30"
+              height="30"
+              src="https://www.iconpacks.net/icons/3/free-icon-instagram-logo-8869.png"
+              alt=""
+            />
+          </a>
+          <a href="https://github.com/tushar12357" target="_blank">
+            <img
+              width="30"
+              height="30"
+              src="github.svg"
+              alt=""
+            />
+          </a>
+        </p>
+      </article>
+      <section id="about-me">
+        <h2>About Me</h2>
+        <p>Passionate student currently pursuing Electronics and Communication Engineering. Want to explore the field of developement</p>
+        <p>In 2020, I started my Bachelor's Degree.</p>
+<!-- 
+        <p>
+          After receiving positive feedback from a large number of students, I took it up more actively. It gives me
+          immense joy to see my students succeed and grow with the skills that I've taught them.
+        </p> -->
+
+        <p>
+          This website is an attempt to share my knowledge and gain more.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <section class="projects-list"></section>
+          
+      </section>
+
+      
+      <section id="technologies">
+
+        <h2>Technologies</h2>
+        <section class="container">
+          <section class="card shadow move-y shadow move-y">
+            <header>
+              <h1>Frontend</h1>
+            </header>
+            <ul>
+  
+              <li>HTML</li>
+                  <li>JS</li>
+                  <li>CSS</li>
+                  <li>React</li>
+                </ul>
+              </section>
+              <section class="card shadow move-y">
+                <header>
+                  <h1>Programming Languages</h1>
+                </header>
+                <ul>
+                  
+                  <li>C</li>
+                  <li>C++</li>
+                  <li>Python</li>
+                </ul>
+              </section>
+              <section class="card shadow move-y">
+                <header>
+                  <h1>Database</h1>
+                </header>
+                <ul>
+                  <!-- <li>Mongo DB</li>
+                  <li>Postgres</li> -->
+               <li>MySQL</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+      <section id="qualifications">
+        <h2>Qualifications</h2>
+        <ol>
+          <li>Pursuing Bachelor's in Technology</li>
+          <!-- <li>CDAC - Wireless and Mobile Computin</li> -->
+        </ol>
+      </section>
+      <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Watching Movies</li>
+          <li>Listening to Music</li>
+          <li>Astronomy and Rocket Propulsion</li>
+        </ul>
+      </section>
+    </section>
+    <section id="contact-me">
+      <h2>Contact Me</h2>
+      <section class="contacts-container">
+        <section class="contact-img">
+          <img src="undraw_Mailbox.png" alt="image for mailbox">
+        </section>
+        <form id='contact' method='POST' name='contact'><input type='hidden' name='form-name' value='contact' />
+          <section>
+            <label for="firstName">First name</label>
+            <input type="text" name="firstName" id="firstName" required />
+          </section>
+          <section>
+            <label for="lastName">Last name</label>
+            <input type="text" name="lastName" id="lastName" required />
+          </section>
+          <section>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"> </textarea>
+          </section>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </section>
+    </main>
+    <footer>
+      Made by Tushar ©2022
+    </footer>
+    <script src="main.js"></script>
+    <script src="menu.js"></script>
+    <script src="theme.js"></script>
+    <script src="projects.js"></script>
+  </body>
+</html>
